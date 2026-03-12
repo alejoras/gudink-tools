@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gudink Tools</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #FBFAF7;
+    color: #272727;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .container {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .header img {
+    height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .header p {
+    color: #888;
+    font-size: 14px;
+  }
+
+  .tools {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tool-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: #fff;
+    border: 1px solid #e0ddd8;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #272727;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .tool-card:hover {
+    border-color: #BA99ED;
+    box-shadow: 0 2px 12px rgba(186,153,237,0.15);
+  }
+
+  .tool-icon {
+    font-size: 24px;
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .tool-info h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .tool-info p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.4;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 48px;
+    color: #bbb;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <p style="font-size:28px;font-weight:700;color:#272727;letter-spacing:-0.5px;">Gudink</p>
+    <p>Marketing tools and dashboards</p>
+  </div>
+
+  <div class="tools">
+    <a href="graphics.html" class="tool-card">
+      <div class="tool-icon">&#x1f3a8;</div>
+      <div class="tool-info">
+        <h3>Graphics Generator</h3>
+        <p>Create social media graphics with Gudink branding. 13 templates, export as PNG.</p>
+      </div>
+    </a>
+
+    <a href="content-machine.html" class="tool-card">
+      <div class="tool-icon">&#x1f4dd;</div>
+      <div class="tool-info">
+        <h3>Content Machine</h3>
+        <p>45 content items across 5 pillars. Instagram-focused. Argentine Spanish.</p>
+      </div>
+    </a>
+
+    <a href="launch-dashboard.html" class="tool-card">
+      <div class="tool-icon">&#x1f680;</div>
+      <div class="tool-info">
+        <h3>Launch Dashboard</h3>
+        <p>MVP activation campaign. Brief, content calendar, growth strategy, checklist.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="footer">Gudink Team Tools</div>
+</div>
+</body>
+</html>
