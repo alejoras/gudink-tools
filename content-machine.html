@@ -715,13 +715,14 @@ body {
   ];
   var links = document.querySelectorAll('#tool-switcher .ts-link');
   for(var i=0;i<links.length;i++) links[i].href = paths[i];
+  if(gh) document.querySelectorAll('[data-gh-src]').forEach(function(img){ img.src = img.getAttribute('data-gh-src'); });
 })();
 </script>
 
 <!-- Sidebar -->
 <aside id="sidebar">
   <div class="sb-logo">
-    <img class="sb-logo-img" src="../projects/gudink/brand/Gudink-logo-blanco-chico-300px.png" alt="Gudink">
+    <img class="sb-logo-img" data-local-src="../projects/gudink/brand/Gudink-logo-blanco-chico-300px.png" data-gh-src="logo.png" src="../projects/gudink/brand/Gudink-logo-blanco-chico-300px.png" alt="Gudink">
     <span class="sb-badge">Content Machine</span>
   </div>
 
@@ -834,7 +835,7 @@ body {
             <div class="gfx" id="gfx-canvas">
               <div class="gfx-grid"></div>
               <div class="gfx-glow"></div>
-              <img class="gfx-logo" src="../projects/gudink/brand/Gudink-logo-blanco-chico-300px.png" alt="">
+              <img class="gfx-logo" data-local-src="../projects/gudink/brand/Gudink-logo-blanco-chico-300px.png" data-gh-src="logo.png" src="../projects/gudink/brand/Gudink-logo-blanco-chico-300px.png" alt="">
               <div class="gfx-content">
                 <div id="preview-headline"></div>
                 <div id="preview-subline"></div>
