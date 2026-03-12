@@ -560,12 +560,12 @@ body {
 
 .gfx-glow {
   position: absolute;
-  top: -250px;
+  top: -180px;
   left: 50%;
   transform: translateX(-50%);
-  width: 900px;
-  height: 900px;
-  background: radial-gradient(circle, rgba(186,153,237,0.14) 0%, transparent 65%);
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(ellipse at 50% 42%, rgba(186,153,237,0.18) 0%, transparent 68%);
   pointer-events: none;
 }
 
@@ -577,7 +577,7 @@ body {
   height: 48px;
   width: auto;
   z-index: 2;
-  opacity: 0.3;
+  opacity: 0.85;
 }
 
 .gfx-content {
@@ -588,18 +588,19 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 150px 90px;
+  padding: 130px 100px;
   z-index: 2;
 }
 
 #preview-headline {
-  font-size: 74px;
-  font-weight: 700;
-  line-height: 1.08;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1.05;
   color: #fafafa;
-  max-width: 900px;
-  margin-bottom: 32px;
+  max-width: 880px;
+  margin-bottom: 36px;
   font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.035em;
   word-break: break-word;
 }
 
@@ -609,11 +610,11 @@ body {
 }
 
 #preview-subline {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
   color: #BCBAB8;
-  line-height: 1.4;
-  max-width: 720px;
+  line-height: 1.45;
+  max-width: 700px;
   font-family: 'Inter', sans-serif;
 }
 
@@ -622,10 +623,10 @@ body {
   bottom: 56px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
-  color: rgba(250,250,250,0.22);
-  letter-spacing: 0.02em;
+  color: rgba(250,250,250,0.18);
+  letter-spacing: 0.04em;
   z-index: 2;
   font-family: 'Inter', sans-serif;
   white-space: nowrap;
@@ -1943,9 +1944,9 @@ function updatePreview() {
   sublineEl.textContent = sublineVal;
 
   // Auto-fit headline
-  autoFitGfxText(headlineEl, 74, 32, 900, 3);
+  autoFitGfxText(headlineEl, 80, 36, 880, 3);
   // Auto-fit subline
-  autoFitGfxText(sublineEl, 30, 16, 720, 2);
+  autoFitGfxText(sublineEl, 28, 16, 700, 2);
 }
 
 function autoFitGfxText(el, idealSize, minSize, maxWidth, maxLines) {
