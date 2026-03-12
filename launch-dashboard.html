@@ -736,7 +736,7 @@ function renderOverviewView() {
 
   viewer.innerHTML = `<div class="overview-view">
     <div class="overview-header">
-      <img data-local-src="../../brand/Gudink-logo-negro-chico-300px.png" data-gh-src="logo-dark.png" src="../../brand/Gudink-logo-negro-chico-300px.png" alt="Gudink" style="height:36px;margin-bottom:12px;display:block;" onerror="this.style.display='none'">
+      <img src="${location.hostname.indexOf('github.io')!==-1?'logo-dark.png':'../../brand/Gudink-logo-negro-chico-300px.png'}" alt="Gudink" style="height:36px;margin-bottom:12px;display:block;" onerror="this.style.display='none'">
       <h1 class="overview-title">MVP Activation</h1>
       <p class="overview-objective">Onboard 15-20 MVP users from the 434-subscriber waitlist, validate product quality, and build the marketing engine for scale over 60 days.</p>
     </div>
